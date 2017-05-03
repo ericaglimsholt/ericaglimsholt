@@ -6,6 +6,7 @@ $light-grey: #ededed;
 
 .bg-faded {
   background-color: white !important;
+  border-bottom: 1px solid $light-grey;
 }
 
 img.logotype-image {
@@ -37,6 +38,38 @@ img.logotype-image {
     font-weight: 100;
   }
 }
+
+.col-md-8 {
+  h2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .textfield {
+    margin-top: 40px;
+    margin-left: 15px;
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+.col-md-4 {
+  margin-top: 85px;
+
+  img.image {
+    width: 100%;
+  }
+}
+
+
 
 .blinking-cursor {
   -webkit-animation: 1s blink step-end infinite;
