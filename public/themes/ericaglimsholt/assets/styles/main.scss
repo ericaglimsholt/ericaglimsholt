@@ -69,6 +69,29 @@ img.logotype-image {
   }
 }
 
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid $light-grey;
+}
+
+textarea {
+  border: 1px solid $light-grey;
+}
+
+.case {
+  margin-top: 40px;
+  .col-md-8 {
+    .companies {
+      h2 {
+        font-family: 'Inconsolata', monospace;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
 
 
 .blinking-cursor {
