@@ -108,6 +108,29 @@ textarea {
   }
 }
 
+.col-md-4 {
+  text-align: center;
+  .icons {
+    img {
+      width: 40%;
+      margin: 0 auto;
+      height: 116px;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-family: 'Inconsolata', monospace;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+
 
 
 .blinking-cursor {
