@@ -35,4 +35,35 @@ Template Name: Home
         <?php endif; ?>
     </div>
 
+    <div class="row about-me">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            <?php if( have_rows('textfield') ): ?>
+                <?php while ( have_rows('textfield') ) : the_row(); ?>
+                    <div class="textfield-about">
+                        <hr>
+                        <p><?php the_sub_field('description_textfield'); ?></p>
+                        <hr>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+
+</div>
+
+<div class="row footer">
+    <div class="container">
+        <div class="md-col-4"></div>
+        <div class="md-col-4">
+            <?php the_field('text'); ?>
+            <p><?php the_field('copywrite'); ?></p>
+        </div>
+        <div class="md-col-4"></div>
+    </div>
+</div>
+
 <?php get_footer(); ?>

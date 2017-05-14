@@ -39,6 +39,19 @@ Template Name: Contact
             <?php endwhile; ?>
         <?php endif; ?>
     </div>
+
+
+    </div>
 </div>
+    <div class="row footer">
+        <div class="container">
+            <div class="md-col-4"></div>
+            <div class="md-col-4">
+                <?php the_field('text'); ?>
+                <p><?php the_field('copywrite'); ?></p>
+            </div>
+            <div class="md-col-4"></div>
+        </div>
+    </div>
 
 <?php get_footer(); ?>

@@ -39,6 +39,33 @@ Template Name: About
             <?php endwhile; ?>
         <?php endif; ?>
     </div>
-</div>
+
+    <div class="row skills">
+        <?php if( have_rows('skills') ): ?>
+            <?php while ( have_rows('skills') ) : the_row(); ?>
+                <div class="col-md-2">
+                    <div class="skills">
+                        <img src="<?php the_sub_field('image'); ?>" alt="">
+                    </div>
+                </div>
+            <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
+
+
+</div></div>
+
+    <div class="row footer">
+        <div class="container">
+            <div class="md-col-4"></div>
+            <div class="md-col-4">
+                <?php the_field('text'); ?>
+                <p><?php the_field('copywrite'); ?></p>
+            </div>
+            <div class="md-col-4"></div>
+        </div>
+    </div>
+
+
 
 <?php get_footer(); ?>
