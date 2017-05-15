@@ -261,3 +261,17 @@ textarea {
     color: black;
   }
 }
+
+@media only screen and (max-width: 760px) {
+  .skills {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+
+    img {
+      width: 50%;
+      margin-top: 20px;
+    }
+  }
+}
